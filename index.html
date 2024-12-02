@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Readers' Corner</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fullpage cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css">
+</head>
+<body>
+  
+  <!-- loader -->
+  <div class="loader"></div>
+  
+  <!-- button to top -->
+  <button id="top" onclick="topButton()"><i class="fa-solid fa-arrow-up"></i></button>
+  
+  <!-- content -->
+  <main class="content">
+    <!-- navigation -->
+    <div class="navbar">
+      <h2>Readers' <span>Corner</span></h2>
+      
+      <nav id="topnav">
+        <ul>
+          <li><a href="#home" class="navlink">Home</a></li>
+          <li><a href="#about" class="navlink">About</a></li>
+          <li><a href="#favorite" class="navlink">Favorite</a></li>
+          <li><a href="#contact" class="navlink">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- menu toggle -->
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+    
+    <!-- section - home -->
+    <div class="home-header">
+      <section id="home">
+        <div class="main-home">
+          <div class="home-text">
+            <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Welcome to Readers' Corner — Hub for <span id="text">Book Enthusiasts.</span></h2>
+            <div class="home-btn">
+              <button data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Favorite Books <i class="fa-solid fa-arrow-right"></i></button>
+              <button data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Email Me <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- section - about -->
+    <section id="about">
+      <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">About</h3>
+      <div class="main-about">
+        <div class="about-text" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="200">
+          <b>Personal Information</b>
+          <p>— Hi, I'm Arah Antoneth P. Viloria and i am 16 years old, I am grade 11 student of <i>San Antonio National Agro Industry and Vocational High School</i></p>
+          <b>Why I Love Reading</b>
+          <p>— I love reading bcoz reading expands my understanding of life in so many ways. It introduces me to people from different cultures and backgrounds, allowing me to emphatize with their experiences and broaden my world view.</p>
+        </div>
+        <div class="quote-text" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="400">
+          <b>Inspiring Quotes</b>
+          <p>— A reader lives a thousand lives before he dies. The man who never reads lives only onr.</p>
+          <ul>
+            <li>George R.R. Martin</li>
+            <li>A Dance with Dragons</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- section - favorite -->
+    <section id="favorite">
+      <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Favorite Books</h3>
+      <div class="main-favorite">
+        <div class="favorite" data-aos="slide-right" data-aos-duration="1000">
+          <img src="b1.jpeg" alt="book 1">
+          <div class="title">
+            <b>Title</b>
+            <p>Dosage of Serotonin</p>
+          </div>
+          <div class="favorite-btn">
+            <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+            <button>Get Free <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="favorite" data-aos="slide-right" data-aos-duration="1000">
+          <img src="b2.jpeg" alt="book 2">
+          <div class="title">
+            <b>Title</b>
+            <p>The Rain in España</p>
+          </div>
+          <div class="favorite-btn">
+            <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+            <button>Get Free <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        
+        <div class="favorite" data-aos="slide-right" data-aos-duration="1000">
+          <img src="b3.jpeg" alt="book 3">
+          <div class="title">
+            <b>Title</b>
+            <p>Chasing in the Wild</p>
+          </div>
+          <div class="favorite-btn">
+            <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+            <button>Get Free <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- section - contact -->
+    <section id="contact">
+      <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Get in Touch</h3>
+      <div class="main-contact" data-aos="fade" data-aos-duration="1000" data-aos-delay="500">
+        <div class="contact-text">
+          <h4>Have Questions?<br/>
+          Reach out to us and we'll respond as soon as possible.</h4>
+        </div>
+        <div class="contact-fields">
+          <input type="text" id="name" placeholder="Fullname">
+          <p id="nameError"></p>
+          <input type="email" id="email" placeholder="Email">
+          <p id="emailError"></p>
+          <input type="password" id="password" placeholder="Password">
+          <p id="passwordError"></p>
+          <textarea rows="10" cols="30"  id="message" placeholder="Message"></textarea>
+          <p id="messageError"></p>
+          <div class="contact-btn">
+            <button onclick="message()">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <div class="footer">
+      <div class="main-footer">
+        <div class="footer-text">
+          <p>Readers' Corner | 2024 — 2025 ©</p>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- javascript plugins -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- javascript -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
