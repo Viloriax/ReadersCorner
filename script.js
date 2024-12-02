@@ -8,7 +8,7 @@ setTimeout(() => {
   
   // AOS
   AOS.init();
-}, 0);
+}, 6000);
 
 // topnav
 const mnnu = document.querySelector("#menu");
